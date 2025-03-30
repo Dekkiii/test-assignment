@@ -100,7 +100,7 @@
   width: 23px;
   height: 23px;
   background-color: white;
-  border: 2px solid #CDCDCD;
+  border: 1px solid #CDCDCD;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, border-color 0.3s ease;
@@ -108,8 +108,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 18px;
-
+ 
 }
+
+
 
 .checkbox:hover {
   background-color: white;
@@ -117,12 +119,13 @@
   background-image: url('assets/check.svg');
 }
 
-.checkbox:active {
+.checkbox:active  {
   background-color: #5087F8;
-  border-color: #2469F6;
-  border: 10px;
-  opacity: 100%;
+  border-color: #5087F8;
+  border-width: 12px;
   background-image: url('assets/checkblack.svg');
+  opacity: 1;
+  box-shadow: 0 0 5px rgba(36, 105, 246, 1.1); /* Shadow with color #2469F6 at 10% opacity */
 }
 
 .checkbox:checked {
@@ -130,4 +133,3 @@
   border-color: #2469F6;
   background-image: url('assets/checkwhite.svg');
 }
-
