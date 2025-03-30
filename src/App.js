@@ -22,9 +22,7 @@ function App() {
     setAllPages(newPages.every(Boolean));
   };
 
-  // const handleDone = () => {
-  //   alert(`You Selected Pages ${pages.map((v, i) => (v ? i + 1 : null)).filter(Boolean).join(", ")}`);
-  // };
+
 
   const handleDone = () => {
     const selectedPages = pages.map((v, i) => (v ? i + 1 : null)).filter(Boolean).join(", ");
